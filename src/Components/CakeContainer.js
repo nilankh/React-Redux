@@ -18,12 +18,12 @@ const mapStateToProps = (state) => {
   };
 };
 
-//step2
+//step2(dispatching actions)
 const mapDispatchToProps = (dispatch) => {
   return {
     buyCake: () => dispatch(buyCake()),
   };
 };
 
-// step3(connect function connect react component to redux store)
+// step3(connect these two  function connect with react component with to the redux store)
 export default connect(mapStateToProps, mapDispatchToProps)(CakeContainer);
